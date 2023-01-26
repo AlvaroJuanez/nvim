@@ -27,7 +27,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 source ~/.config/nvim/plugin/plug-config/coc.vim
-"source ~/.config/nvim/plugin/plug-config/deus.vim
+source ~/.config/nvim/plugin/plug-config/deus.vim
 source ~/.config/nvim/plugin/plug-config/closetag.vim
 source ~/.config/nvim/plugin/plug-config/indent.vim
 source ~/.config/nvim/plugin/plug-config/prg_c.vim

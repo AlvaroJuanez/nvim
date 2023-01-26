@@ -7,7 +7,7 @@ let g:airline#extensions#tabline#right_sep = '   ﲮ '
 let g:airline#extensions#tabline#left_alt_sep = '  '
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
-let g:airline_theme = 'supernova' "atomic, behelit, seagull, supernova
+let g:airline_theme = 'atomic' "atomic, behelit, seagull, supernova
 "violet, desertink
 
 let g:airline#extensions#branch#enabled = 1
