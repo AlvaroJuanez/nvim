@@ -57,3 +57,5 @@ autocmd Filetype html setlocal ts=2 sw=2 expandtab
 "markdown
 autocmd FileType markdown setlocal colorcolumn=100
 autocmd FileType markdown setlocal ts=2 sw=2 expandtab
+"PHP
+autocmd Filetype php setlocal ts=2 sw=2 expandtab
