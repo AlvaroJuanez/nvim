@@ -49,7 +49,7 @@ set number
 
 set termguicolors
 set colorcolumn=120
-highlight ColoColumn ctermbg=0 guibg=lightgrey
+highlight ColorColumn ctermbg=0 guibg=Lightgrey
 
 "html
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
