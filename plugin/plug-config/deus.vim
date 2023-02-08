@@ -8,16 +8,6 @@
 
 " Setup Colors/Palette {{{
 " Initialisation: {{{
-set t_Co=256
-set termguicolors
-
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-
-set background=dark    " Setting dark mode
-colorscheme deus
-let g:deus_termcolors=256
-
 
 if version > 580
   hi clear
@@ -36,11 +26,11 @@ endif
 " Global Settings: {{{
 
 if !exists('g:deus_bold')
-  let g:deus_bold=0
+  let g:deus_bold=1
 endif
 if !exists('g:deus_italic')
   if has('gui_running') || $TERM_ITALICS == 'true'
-    let g:deus_italic=0
+    let g:deus_italic=1
   else
     let g:deus_italic=0
   endif
@@ -93,7 +83,8 @@ let s:ds = {}
 
 
 " fill it with absolute colors
-let s:ds.dark0       = ['#2C323B', 235]     " 40-40-40 Background
+let s:ds.dark0       = ['#e0c060', 235]     " 40-40-40 Background
+"let s:ds.dark0       = ['#2C323B', 235]     " 40-40-40 Background
 let s:ds.dark1       = ['#3c3836', 237]     " 60-56-54
 let s:ds.dark2       = ['#242a32', 239]     " 80-73-69
 let s:ds.dark3       = ['#665c54', 241]     " 102-92-84
@@ -122,12 +113,12 @@ let s:ds.bright_orange  = ['#fe8019', 208]     " 254-128-25
 " Setup Emphasis: {{{
 
 let s:bold = 'bold,'
-if g:deus_bold == 1
+if g:deus_bold == 0
   let s:bold = ''
 endif
 
 let s:italic = 'italic,'
-if g:deus_italic == 1
+if g:deus_italic == 0
   let s:italic = ''
 endif
 
@@ -1248,4 +1239,3 @@ endfunction
 " }}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker:
-

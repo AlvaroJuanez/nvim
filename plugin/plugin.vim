@@ -6,6 +6,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 "temas
 Plug 'ajmwagar/vim-deus'
+Plug 'morhetz/gruvbox'
 
 "gestor de archivos
 Plug 'scrooloose/nerdtree'
@@ -27,7 +28,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 source ~/.config/nvim/plugin/plug-config/coc.vim
-source ~/.config/nvim/plugin/plug-config/deus.vim
+"source ~/.config/nvim/plugin/plug-config/deus.vim
 source ~/.config/nvim/plugin/plug-config/closetag.vim
 source ~/.config/nvim/plugin/plug-config/indent.vim
 source ~/.config/nvim/plugin/plug-config/prg_c.vim
@@ -35,4 +36,5 @@ source ~/.config/nvim/plugin/plug-config/py_thon.vim
 source ~/.config/nvim/plugin/plug-config/rainbow.vim
 source ~/.config/nvim/plugin/plug-config/vim_airline.vim
 source ~/.config/nvim/plugin/plug-config/vim_nerdtree.vim
+source ~/.config/nvim/plugin/plug-config/gruvbox.vim
 
